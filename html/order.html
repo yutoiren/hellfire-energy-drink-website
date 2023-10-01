@@ -39,19 +39,19 @@
 		<label for="Google Pay">Google Pay</label><br>
 		<input type="radio" id="apple_pay" name="payment" value="Apple Pay">
 		<label for="Apple Pay">Apple Pay</label><br><br>
-		<input type="submit" value="Submit">
+		
 	</form>
 	
 	<br><br><br>
 
-	<p>Depending on your choice of payment, please fill out the necessary forms.</p>
+	<p>Depending on your choice of payment, please fill out the necessary forms. Please note that the information that is filled out in a form for a payment method that you did not select will not be saved. Please click the submit button to confirm </p>
 	<br>
 	
     <table border="4px">
 
         <tr>
             <td><h3 align="center"><u><br>Credit Card / Debit Card</u></h3><br></td>
-            <td><h3><u>PayPal / Google Pay / Apple Pay</u></h3></td>
+            <td><h3 align="center"><u>PayPal / Google Pay / Apple Pay</u></h3></td>
         </tr>
         <tr>
                 <td>
@@ -62,17 +62,17 @@
                     <label for="cvv">CVV:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                     <input type="cvv" id="cvv" name="cvv">
                     <br><br>
-                    <label for="">Phone Number: </label>
-                    <input type="cvv" id="cvv" name="cvv">
+                    <label for="phnum">Phone Number: </label>
+                    <input type="phnum" id="phnum" name="phnum">
                     <br><br>
-                    <label for="cvv">Street Address:&nbsp;</label>
-                    <input type="cvv" id="cvv" name="cvv">
+                    <label for="street">Street Address:&nbsp;</label>
+                    <input type="street" id="street" name="street">
                     <br><br>
-                    <label for="cvv">Province: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="cvv" id="cvv" name="cvv">
+                    <label for="province">Province: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="province" id="province" name="province">
                     <br><br>
-                    <label for="cvv">Country: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="cvv" id="cvv" name="cvv">
+                    <label for="country">Country: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="country" id="country" name="country">
                     <br><br>
                     <label for="postalc">Postal Code:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                     <input type="postalc" id="postalc" name="postalc">
@@ -83,22 +83,26 @@
                 </form>
                 </td>
                 <td>
-                    
+                    <p>hi</p>
                 </td>
         </tr>
         <td>
-            <p>hi</p>
+            <img src="mastercard.png" height="50" width="100"><img src="visa.jpg" align="right" height="50" width="100">
         </td>
-                    
+		<td>		
+			<img src="paypal.png" height="100" width="100"><img src="googlepay.jpg" height="100" width="180"><img src="apple-pay-logo-0.png" height="120" width="140">
+		</td>
 
         </tr>
 
-        <input type="submit" value="Submit">
-    </form></td>
     </table>
-	
-	<br>
-	<h3><u></u></h3>
+	<br><br><br>
+
+	<form>
+	<button name="order_confirm" value="Submit">Confirm Your Order</button>
+	</form>
+
+
 	</body>
 </html>
 
