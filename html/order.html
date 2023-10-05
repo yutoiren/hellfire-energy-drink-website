@@ -4,39 +4,138 @@
         <meta charset="utf-8">
         <title>Hellfire Energy Order Page</title>
     </head>
-    <body>
+    <header>
+		<div class="navbar">
+			<header>
+				<h1>Hellfire Energy</h1>
+			</header>
+			<hr>
 
-    <div class="navbar">
-        <header>
-            <h1>Hellfire Energy</h1>
-        </header>
-        <hr>
+			<nav>
+				<a href="main.html">Main Page</a>&nbsp|&nbsp
+				<a href="flavours.html">Flavours</a>&nbsp|&nbsp
+				<a href="order.html">Place Order</a>&nbsp|&nbsp
+				<a href="promotions.html">Promotional Offers</a>&nbsp|&nbsp
+				<a href="contact.html">Contact</a>&nbsp|&nbsp
+				<a href="sponsors.html">Check out our sponsors!</a>&nbsp|&nbsp
+				<a href="jobs.html">Apply to work for us</a>
+			</nav>
 
-        <nav>
-        <a href="main.html">Back to Main Page</a>&nbsp|&nbsp
-        <a href="flavours.html">Flavours</a>&nbsp|&nbsp
-        <a href="order.html">Place Order</a>&nbsp|&nbsp
-        <a href="contact.html">Contact</a>&nbsp|&nbsp
-        <a href="sponsors.html">Check out our sponsors!</a>
-        </nav>
-
-        <hr>
-    </div>
-
-
-    <hr>
-
+			<hr>
+		</div>
+	</header>
+	<body>
     <h2>ORDER NOW!</h2><br>
-    <p>We now have more ways to get a can of Hellfire to you!</p>
-    <p><b>We now have more ways to get a can of Hellfire to you!</b></p>
+    <p><b>We now have 5 ways to get a can of Hellfire to you! Please select your choice of payment:</b></p>
 
-    <ol>
-        <li>PayPal</li>
-        <li>MasterCard</li>
-        <li>Visa</li>
-        <li>Google Pay</li>
-        <li>Apple Pay</li>
-    </ol>
-      
-</body>
+	<form>
+		<p></p>
+		<input type="radio" id="paypal" name="payment" value="PayPal">
+		<label for="PayPal">PayPal</label><br>
+		<input type="radio" id="mastercard" name="payment" value="MasterCard">
+		<label for="MasterCard">MasterCard</label><br>
+		<input type="radio" id="visa" name="payment" value="Visa">
+		<label for="Visa">Visa</label><br>
+		<input type="radio" id=""google_pay name="payment" value="Google Pay">
+		<label for="Google Pay">Google Pay</label><br>
+		<input type="radio" id="apple_pay" name="payment" value="Apple Pay">
+		<label for="Apple Pay">Apple Pay</label><br><br>
+		
+	</form>
+	
+	<br><br><br>
+
+	<p>Depending on your choice of payment, please fill out the necessary forms. Please note that the information that is filled out in a form for a payment method that you did not select will not be saved. Please click the submit button to confirm </p>
+	<br>
+	
+    <table border="4px">
+
+        <tr>
+            <td><h3 align="center"><u><br>Credit Card / Debit Card</u></h3><br></td>
+            <td><h3 align="center"><u>PayPal / Google Pay / Apple Pay</u></h3></td>
+        </tr>
+        <tr>
+                <td>
+                    <br><br>
+                <form>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="cardnum">Card Number:</label>
+                    &nbsp;&nbsp;<input type="text" id="cardnum" name="cardnum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="cvv">CVV:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="cvv" id="cvv" name="cvv">
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="phnum">Phone Number: </label>
+                    <input type="phnum" id="phnum" name="phnum">
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="street">Street Address:&nbsp;</label>
+                    <input type="street" id="street" name="street">
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="province">Province: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="province" id="province" name="province">
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="country">Country: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="country" id="country" name="country">
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="postalc">Postal Code:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="postalc" id="postalc" name="postalc">
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="email">Email Address:&nbsp;</label>
+                    <input type="email" id="email" name="email">
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="quantity">Quantity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="quantity" id="quantity" name="quantity">
+                    <br><br><br>
+                </form>
+                </td>
+                <td>
+                    <br><br><br><br><br>
+                    <form align="center">
+                        <label for="phnum">Phone Number:</label>
+                        <input type="phnum" id="phnum" name="phnum">
+                        <br><br>
+                        <label for="email">Email Address:&nbsp;</label>
+                        <input type="email" id="email" name="email">
+                        <br><br>
+                        <label for="street">Street Address:&nbsp;</label>
+                        <input type="street" id="street" name="street">
+                        <br><br>
+                        <label for="province">Province: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="province" id="province" name="province">
+                        <br><br>
+                        <label for="country">Country: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="country" id="country" name="country">
+                        <br><br>
+                        <label for="postalc">Postal Code:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="postalc" id="postalc" name="postalc">
+                        <br><br>
+                        <label for="quantity">Quantity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="quantity" id="quantity" name="quantity">
+                        <br><br><br><br><br>
+                    </form>
+                    <p><mark>NOTE: CLICK ON THE LINK BELOW WHICH CORRESPONDS<br>TO YOUR PREFERRED PAYMENT CHOICE TO COMPLETE<br>YOUR PAYMENT!</mark></p>
+                    <ul>
+                        <li><a href="https://www.paypal.com/ca/home">PayPal</a></li>
+                        <li><a href="https://pay.google.com/about/">Google Pay</a></li>
+                        <li><a href="https://www.apple.com/ca/apple-pay/">Apple Pay</a></li>
+                    </ul>
+                </td>
+        </tr>
+        <td>
+            <img src="mastercard.png" height="50" width="100"><img src="visa.jpg" align="right" height="50" width="100">
+        </td>
+		<td>		
+			<img src="paypal.png" height="100" width="100"><img src="googlepay.jpg" height="100" width="180"><img src="apple-pay-logo-0.png" height="120" width="140">
+		</td>
+        </tr>
+
+    </table>
+	<br><br><br>
+
+	<form>
+	<button name="order_confirm" value="Submit">Confirm Your Order</button>
+	</form>
+
+
+	</body>
 </html>
+
