@@ -51,73 +51,120 @@
     <table border="4px">
 
         <tr>
-            <td><h3 align="center"><u><br>Credit Card / Debit Card</u></h3><br></td>
-            <td><h3 align="center"><u>PayPal / Google Pay / Apple Pay</u></h3></td>
+            <td style="width: 50%;"><h3 align="center"><u><br>Credit Card / Debit Card</u></h3><br></td>
+            <td style="width: 50%;"><h3 align="center"><u>PayPal / Google Pay / Apple Pay</u></h3></td>
         </tr>
         <tr>
-                <td>
+                <td align="center">
                     
                 <form>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="cardnum">Card Number:</label>
-                    &nbsp;&nbsp;<input type="text" id="cardnum" name="cardnum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="cardnum">Card Number:</label>
+                    &nbsp;&nbsp;<input type="text" id="cardnum" name="cardnum" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <br><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="cvv">CVV:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text" id="cvv" name="cvv">
+                    <input type="text" id="cvv" name="cvv" required>
                     <br><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="phnum">Phone Number: </label>
-                    <input type="text" id="phnum" name="phnum">
+                    <input type="text" id="phnum" name="phnum" required>
                     <br><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="street">Street Address:&nbsp;</label>
-                    <input type="text" id="street" name="street">
+                    <input type="text" id="street" name="street" required>
                     <br><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="province">Province: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text" id="province" name="province">
+                    <input type="text" id="province" name="province" required>
                     <br><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="country">Country: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text" id="country" name="country">
+                    <input type="text" id="country" name="country" required>
                     <br><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="postalc">Postal Code:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text" id="postalc" name="postalc">
+                    <input type="text" id="postalc" name="postalc" required>
                     <br><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="email">Email Address:&nbsp;</label>
-                    <input type="email" id="email" name="email">
-                    <br><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="quantity">Quantity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="number" id="quantity" name="quantity">
+                    <input type="text" id="email" name="email" required>
+                    <br><br><br><br><br>
+                    <label for="quantity">Quantity:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <select name ="quantity" required>
+                        <optgroup label ="Quantity">
+                            <option value ="1">1</option>
+                            <option value ="2">2</option>
+                            <option value ="3">3</option>
+                            <option value ="4">4</option>
+                            <option value ="5">5</option>
+                            <option value ="6">6</option>
+                            <option value ="7">7</option>
+                            <option value ="8">8</option>
+                            <option value ="9">9</option>
+                            <option value ="10">10</option>
+                            <option value ="more">Custom</option>
+                        </optgroup>
+                    </select><br><br>
+                    <input name="custom" placeholder="Custom (Only for 10+)">
+                    <br>
+                    <p style="color: red;"><br>*Note: If your order exceeds 10 HELLFIRE energy drink cans, please enter the quantity of how much you would like to order.</p>
                     <br><br><br><br>
+                    
+
+                    <input type="submit" value="Confirm Order" onclick="alert">
+                    <input type="reset" value="Cancel Order">
                 </form>
                 </td>
                 <td>
-                    <br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
                     <form align="center">
                         <label for="phnum">Phone Number:</label>
-                        <input type="text" id="phnum" name="phnum">
+                        <input type="text" id="phnum" name="phnum" required>
                         <br><br>
                         <label for="email">Email Address:&nbsp;</label>
-                        <input type="email" id="email" name="email">
+                        <input type="text" id="email" name="email" required>
                         <br><br>
                         <label for="street">Street Address:&nbsp;</label>
-                        <input type="text" id="street" name="street">
+                        <input type="text" id="street" name="street" required>
                         <br><br>
                         <label for="province">Province: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                        <input type="text" id="province" name="province">
+                        <input type="text" id="province" name="province" required>
                         <br><br>
                         <label for="country">Country: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                        <input type="text" id="country" name="country">
+                        <input type="text" id="country" name="country" required>
                         <br><br>
                         <label for="postalc">Postal Code:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                        <input type="text" id="postalc" name="postalc">
+                        <input type="text" id="postalc" name="postalc" required>
+                        <br><br><br><br><br><br><br><br><br><br>
+                        <label for="quantity" align="left">Quantity:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        
+                        
+                        <select name ="quantity" required>
+                            <optgroup label ="Quantity">
+                                <option value ="1">1</option>
+                                <option value ="2">2</option>
+                                <option value ="3">3</option>
+                                <option value ="4">4</option>
+                                <option value ="5">5</option>
+                                <option value ="6">6</option>
+                                <option value ="7">7</option>
+                                <option value ="8">8</option>
+                                <option value ="9">9</option>
+                                <option value ="10">10</option>
+                                <option value ="more">Custom</option>
+                            </optgroup>
+                        </select><br><br>
+                        <input name="custom" placeholder="Custom (Only for 10+)">
+                        <br>
+                        <p style="color: red;"><br>*Note: If your order exceeds 10 HELLFIRE energy drink cans, please enter the quantity of how much you would like to order.</p>
+                        <br><br><br><br>
+                        
+                        <p align="left"><mark>NOTE: CLICK ON THE LINK BELOW WHICH CORRESPONDS<br>TO YOUR PREFERRED PAYMENT CHOICE TO COMPLETE<br>YOUR PAYMENT!</mark></p>
+                        <ul align="left">
+                            <li><a href="https://www.paypal.com/ca/home">PayPal</a></li>
+                            <li><a href="https://pay.google.com/about/">Google Pay</a></li>
+                            <li><a href="https://www.apple.com/ca/apple-pay/">Apple Pay</a></li>
+                        </ul>
                         <br><br>
-                        <label for="quantity">Quantity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                        <input type="number" id="quantity" name="quantity">
-                        <br><br><br><br><br>
+
+                        <input type="submit" value="Confirm Order" onclick="alert">
+                        <input type="reset" value="Cancel Order">
                     </form>
-                    <p><mark>NOTE: CLICK ON THE LINK BELOW WHICH CORRESPONDS<br>TO YOUR PREFERRED PAYMENT CHOICE TO COMPLETE<br>YOUR PAYMENT!</mark></p>
-                    <ul>
-                        <li><a href="https://www.paypal.com/ca/home">PayPal</a></li>
-                        <li><a href="https://pay.google.com/about/">Google Pay</a></li>
-                        <li><a href="https://www.apple.com/ca/apple-pay/">Apple Pay</a></li>
-                    </ul>
+                    <br><br>
                 </td>
         </tr>
         <tr>
@@ -132,10 +179,6 @@
     </table>
 	<br><br><br>
 
-	<form>
-        <input type="submit" value="Confirm Order" onclick="alert">
-        <input type="reset" value="Cancel Order">
-	</form>
 
 
 
