@@ -1,0 +1,29 @@
+header {
+    background-color: #8cb2ff;
+    color: #da6c3ff;
+    border-color: #80aaff;
+    border-style: solid;
+    border-radius: 0.7em;
+    text-align: center;
+    margin: 1em 0.5em;
+    padding: 0em 1em 0em;
+}
+
+nav {
+    background-color: #b3ccff;
+    border-color: #6e8dcc;
+    border-style: solid;
+    border-width: 0.2em;
+    border-radius: 1em;
+    margin: 1.5em 1em 1.5em 1em;
+    padding: 1.5em 0em 1em 0em;
+}
+
+nav a {
+    border-color: #ccddff;
+    border-style: groove;
+    border-width: 0.2em;
+    margin: 0em 2em 0em 0.5em;
+    padding: 0em;
+    white-space: nowrap
+}
