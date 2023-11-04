@@ -11,3 +11,11 @@
 #promo-header {
 	text-shadow: 2px 2px 3px crimson;
 }
+#job-header {
+	text-shadow: 2px 2px 3px cyan;
+}
+#job-field {
+	width: 600px;
+	background-color: LightCyan;
+	box-shadow: 3px 3px;
+}
