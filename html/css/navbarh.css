@@ -1,0 +1,64 @@
+/* CSS meant for the navigation bar and header only. */
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%
+}
+
+.navbar-top {
+  overflow: hidden;
+  background-color: #00b4d8;
+}
+
+.navbar-top a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 0% 0.8em;
+  text-decoration: none;
+  font-size: 17px;
+
+  /* 100% divided by number of elements
+      all elements fit evenly on bar    */
+  width: 25%;
+}
+
+.navbar-top a:hover {
+  background-color: #caf0f8;
+  color: black;
+}
+
+.navbar-top a.active {
+  background-color: #90e0ef;
+  color: black;
+}
+
+.navbar-bottom {
+    overflow: hidden;
+    background-color: #023e8a;
+}
+
+.navbar-bottom a {
+    float: left;
+    color: #b7b7a4;
+    text-align: center;
+    padding: 1em 0% 1em 0%;
+    text-decoration: none;
+    font-size: 15px;
+
+    /* 100% divided by number of elements
+      all elements fit evenly on bar     */
+    width: 25%;
+}
+
+.navbar-bottom a:hover {
+  background-color: #caf0f8;
+  color: black;
+}
+
+.navbar-bottom a.active {
+  background-color: #90e0ef;
+  color: black;
+}
