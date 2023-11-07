@@ -1,15 +1,26 @@
 /* CSS meant for all pages, not including the navigation bar or header elements. */
 
+html {
+	font-family: arial, sans-serif;
+}
+
 body {
     font-family: verdana;
     margin: 0px;
     padding: 0px;
 
 .main {
-    margin: 0em 5% 0em 5%;
+	margin: 0em 5% 0em 5%;
 }
 
 .footer {
-    margin: 0em 2% 0em 2%;
+    margin: 3em 2% 0em 2%;
     border-top: solid 1px #777;
+}
+
+.img-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
 }
