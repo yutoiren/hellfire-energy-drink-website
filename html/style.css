@@ -1,0 +1,24 @@
+html {
+	font-family: arial, sans-serif;
+}
+.promo-cell {
+	padding: 5px;
+	border: 3px ridge cyan;
+}
+#promo-table {
+	background-color: yellow;
+	border: 3px ridge cyan;
+	border-collapse: collapse;
+	box-shadow: 5px 5px;
+}
+#promo-header {
+	text-shadow: 2px 2px 3px crimson;
+}
+#job-header {
+	text-shadow: 2px 2px 3px cyan;
+}
+#job-field {
+	width: 600px;
+	background-color: LightCyan;
+	box-shadow: 3px 3px;
+}
