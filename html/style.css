@@ -1,3 +1,6 @@
+html {
+	font-family: arial, sans-serif;
+}
 .promo-cell {
 	padding: 5px;
 	border: 3px ridge cyan;
