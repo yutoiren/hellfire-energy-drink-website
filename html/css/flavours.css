@@ -45,3 +45,7 @@ fieldset {
     background-image: linear-gradient(rgb(255, 132, 0), yellow, orange);
 }
 
+#blueberry {
+    background-image: linear-gradient(rgb(84, 84, 224),blue);
+}
+

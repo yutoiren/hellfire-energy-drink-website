@@ -27,34 +27,38 @@
 	    </header>
 	<body>
         <div class="main">
-            <h2 style="">ORDER NOW!</h2><br>
-            <p><b>We now have 5 ways to get a can of Hellfire to you! Please select your choice of payment:</b></p>
+            <br><br>
+            <h2 id="title">ORDER NOW!</h2><br>
+            <section id="introform_adjust">
+                <p style="font-size: larger; font-family: cursive; margin-left: 10px;"><b>We now have 5 ways to get a can of Hellfire to you! Please select your choice of payment:</b></p>
 
-            <form>
-                <p></p>
-                <input type="radio" id="paypal" name="payment" value="PayPal">
-                <label for="PayPal">PayPal</label><br>
-                <input type="radio" id="mastercard" name="payment" value="MasterCard">
-                <label for="MasterCard">MasterCard</label><br>
-                <input type="radio" id="visa" name="payment" value="Visa">
-                <label for="Visa">Visa</label><br>
-                <input type="radio" id="google_pay" name="payment" value="Google Pay">
-                <label for="Google Pay">Google Pay</label><br>
-                <input type="radio" id="apple_pay" name="payment" value="Apple Pay">
-                <label for="Apple Pay">Apple Pay</label><br><br>
-
-            </form>
+                <form style="margin-left: 30px;">
+                    <p></p>
+                    <input type="radio" id="paypal" name="payment" value="PayPal">
+                    <label for="PayPal">PayPal</label><br>
+                    <input type="radio" id="mastercard" name="payment" value="MasterCard">
+                    <label for="MasterCard">MasterCard</label><br>
+                    <input type="radio" id="visa" name="payment" value="Visa">
+                    <label for="Visa">Visa</label><br>
+                    <input type="radio" id="google_pay" name="payment" value="Google Pay">
+                    <label for="Google Pay">Google Pay</label><br>
+                    <input type="radio" id="apple_pay" name="payment" value="Apple Pay">
+                    <label for="Apple Pay">Apple Pay</label><br><br>
+    
+                </form>
+            </section>
+            
 
             <br><br><br>
 
             <p>Depending on your choice of payment, please fill out the necessary forms. Please note that the information that is filled out in a form for a payment method that you did not select will not be saved. Please click the submit button to confirm </p>
             <br>
 
-            <table border="4px">
+            <table border="4px" id="table_adjust">
 
                 <tr>
-                    <td style="width: 50%;"><h3 align="center"><u><br>Credit Card / Debit Card</u></h3><br></td>
-                    <td style="width: 50%;"><h3 align="center"><u>PayPal / Google Pay / Apple Pay</u></h3></td>
+                    <td style="width: 50%;"><h3 align="center" class="formtype"><u><br>Credit Card / Debit Card</u></h3><br></td>
+                    <td style="width: 50%;"><h3 align="center" class="formtype"><u>PayPal / Google Pay / Apple Pay</u></h3></td>
                 </tr>
                 <tr>
                         <td align="center">
@@ -174,7 +178,7 @@
                     <img src="images/order/mastercard.png" height="50" width="100"><img src="images/order/visa.jpg" align="right" height="50" width="100">
                 </td>
                 <td>
-                    <img src="images/order/paypal.png" height="100" width="100"><img src="images/order/googlepay.jpg" height="100" width="180"><img src="apple-pay-logo-0.png" height="120" width="140">
+                    <img src="images/order/paypal.png" height="100" width="100"><img src="images/order/googlepay.jpg" height="100" width="180" style="margin-right: 20px; margin-left: 20px;"><img src="apple-pay-logo-0.png" height="120" width="140">
                 </td>
                 </tr>
 
