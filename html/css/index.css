@@ -1,12 +1,11 @@
 /* CSS meant for all pages, not including the navigation bar or header elements. */
 
+html {
+	font-family: arial, sans-serif;
+}
+
 body {
     font-family: verdana;
     margin: 0px;
     padding: 0px;
 }
-
-
-
-/* Contact us CSS */
-
