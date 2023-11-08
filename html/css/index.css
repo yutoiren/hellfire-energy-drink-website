@@ -2,8 +2,6 @@
 
 html {
 	font-family: arial, sans-serif;
-    background-color: lightblue;
-    color:  cyan;
 }
 
 body {
@@ -14,4 +12,16 @@ body {
 
 .main {
     margin: 0em 5% 0em 5%;
+}
+
+.footer {
+    margin: 3em 2% 0em 2%;
+    border-top: solid 1px #777;
+}
+
+.img-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
 }

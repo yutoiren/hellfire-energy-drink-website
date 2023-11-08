@@ -3,9 +3,9 @@ html{
 }
 h1{
     text-shadow: 2px 2px 3px rgb(232, 92, 181);
-    align-items: left;
 }
 h2{
+    text-align: center;
     text-shadow: 2px 2px 3px rgb(2, 36, 15)
     
 }
