@@ -3,10 +3,10 @@ html{
 }
 h2{
     text-shadow: 2px 2px 3px rgb(172, 100, 240);
+}
 
-    p{
+p{
         font-family: Arial, sans-serif;
         padding: 25px;
         margin: 15px;
-    }
 }

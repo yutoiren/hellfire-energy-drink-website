@@ -8,6 +8,10 @@ html {
 
 body {
     font-family: verdana;
-    margin: 0px;
+    margin: 0em;
     padding: 0px;
+}
+
+.main {
+    margin: 0em 5% 0em 5%;
 }
