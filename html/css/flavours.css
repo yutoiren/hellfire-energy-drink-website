@@ -1,0 +1,47 @@
+body {background-image: linear-gradient(cyan,lightgreen,lightblue,rgb(87, 87, 243));}
+
+#sponsorposter {
+    margin: 30px;
+    padding: 10px;
+    border-color: blue;
+    border-radius: 10%;
+    background-color: rgb(11, 177, 177);
+}
+
+#tabledesign {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    box-shadow: 10px 15px;
+    border-color: blue;
+}
+
+#limitedtimeoffer {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(11, 208, 208);
+    border-radius: 20%;
+}
+
+fieldset {
+    margin: 20px;
+    padding: 10px;
+}
+
+
+#watermelon {
+    background-image: linear-gradient(rgb(87, 172, 38),lime);
+}
+
+#strawberry {
+    background-image: linear-gradient(crimson,orangered);
+}
+
+#blueberry {
+    background-image: linear-gradient(cyan,lightgreen,lightblue,rgb(87, 87, 243));
+}
+
+#orange {
+    background-image: linear-gradient(rgb(255, 132, 0), yellow, orange);
+}
+
