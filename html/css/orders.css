@@ -1,0 +1,30 @@
+body {background-image: linear-gradient(lightblue,blue, purple);}
+
+#title {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#introform_adjust {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10%;
+    box-shadow: 10px 15px;
+    background-color: rgb(110, 110, 192);
+}
+
+#table_adjust {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    box-shadow: 10px 10px 1.5em;
+    border-color: blue;
+}
+
+img {
+    padding: 10px;
+}
+
+.formtype {font-family: "Brush Script MT", cursive; font-size: larger;}
