@@ -14,6 +14,44 @@
 				background-attachment: fixed;
 			}
 		</style>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script>
+			$("document").ready(function() {
+				$("#submit").click(function() {
+					$("input").css("background-color", "");
+					let isValid = true;
+					let phonePattern = /^\([0-9]{3}\)[0-9]{3}-[0-9]{4}$/;
+					let mailPattern = /\@.+\./
+					if ($("#fname").val() == "") {
+						$("#fname").css("background-color", "red");
+						isValid = false;
+					}
+					if ($("#lname").val() == "") {
+						$("#lname").css("background-color", "red");
+						isValid = false;
+					}
+					if ($("#address").val() == "") {
+						$("#address").css("background-color", "red");
+						isValid = false;
+					}
+					if ($("#phonenum").val() == "" || !phonePattern.test($("#phonenum").val())) {
+						$("#phonenum").css("background-color", "red");
+						isValid = false;
+					}
+					if ($("#email").val() == "" || !mailPattern.test($("#email").val())) {
+						$("#email").css("background-color", "red");
+						isValid = false;
+					}
+					if ($("#resume").val() == "") {
+						$("#resume").css("background-color", "red");
+						isValid = false;
+					}
+					if (isValid) {
+						$("input[type=button]").css("background-color", "lime");
+					}
+				});
+			});
+		</script>
 	</head>
 		<header>
             <img src="images/navbar/Hellfirelogo.png">
@@ -51,7 +89,7 @@
 					</tr>
 					<tr>
 						<td><label for="phonenum">Phone Number:</label></td>
-						<td><input type="number" id="phonenum" name="phonenum"></td>
+						<td><input type="tel" id="phonenum" name="phonenum" placeholder="(***)***-****"></td>
 						<td><label for="email">E-Mail:</label></td>
 						<td><input type="email" id="email" name="email"></td>
 					<tr>
@@ -62,7 +100,7 @@
 					</tr>
 					<tr>
 						<td></td>
-						<td><input type="submit" value="Submit"></td>
+						<td><input type="button" id="submit" value="Submit"></td>
 					</td>
 				</form>
 			</table>
