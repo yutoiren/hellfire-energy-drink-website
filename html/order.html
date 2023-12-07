@@ -35,7 +35,7 @@
             <section id="introform_adjust">
                 <p style="font-size: larger; font-family: cursive; margin-left: 10px;"><b>We now have 5 ways to get a can of Hellfire to you! Please select your choice of payment:</b></p>
 
-                <form style="margin-left: 30px;">
+                <form style="margin-left: 30px;" onsubmit="return paymentValidate()"></form>
                     <p></p>
                     <input type="radio" id="paypal" name="payment" value="PayPal">
                     <label for="PayPal">PayPal</label><br>
@@ -68,7 +68,7 @@
 
                         <form>
 
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="cardnum">Card Number:</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="cardnum">Card Number:</label>
                             &nbsp;&nbsp;<input type="text" id="cardnum" name="cardnum" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <br><br>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="cvv">CVV:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
