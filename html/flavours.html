@@ -41,20 +41,35 @@
 					</tr>
 				</table>
 				<br><br><br>
-				<section id="limitedtimeoffer">
+				<section id="limitedtimeoffer" style="font-size: 120%">
 					<br>
-					<h2 style="color: red; padding: 10px; text-align: center; font-family: fantasy;"><u>ALERT: LIMITED TIME ONLY!!!</u></h2>
-					<p style="color: red;">COMING SOON: Limited Edition HELLFIRE: UNLEASH THE BEAST. Thanks to our latest collaboration with internet celebrity, Mr. Beast, we are creating the best energy drink, which combines taste and energy. Unleash your inner beast, and conquer the world! Exclusive to HELLFIRE members only.<br><br>Not a member? Don't worry, just sign up below, it's <b><u>FREE!</u></b></p><br><br>
+					<h2 style="color: red; padding: 10px; text-align: center; font-family: fantasy; text-shadow: 2px 2px black"><u>ALERT: LIMITED TIME ONLY!!!</u></h2>
+					<p style="color: red; text-shadow: 1px 1px black;">COMING SOON: Limited Edition HELLFIRE: UNLEASH THE BEAST. Thanks to our latest collaboration with internet celebrity, Mr. Beast, we are creating the best energy drink, which combines taste and energy. Unleash your inner beast, and conquer the world! Exclusive to HELLFIRE members only.<br><br>Not a member? Don't worry, just sign up below, it's <b><u style="text-shadow: 2px 2px black">FREE!</u></b></p><br><br>
 				</section>
 				<br><br>
-				<fieldset>
+				<fieldset style=" font-size: 120%;">
 					<legend><b>Exclusive Discount for HELLFIRE members!!!</b></legend>
 					<p>***SIGN UP NOW TO UNLOCK DISCOUNTS FOR FUTURE PURCHASES!</p>
-					<form><br>
+					<form>
+						<div style="margin: 0.5em 1em">
 						<label>Email Address:</label>
-						<input type="text" name="emailID_subscription" placeholder="johnsmith@example.com"><br><br><br><br>
-	
-						<input type="submit" value="Subscribe" name="confirm_member">
+							<input type="text" id="emailEntry" placeholder="johnsmith@example.com">
+							<br>
+							
+							<button style='margin:1em;' type="button" name="confirm_member" onclick="validateEmail()">Subscribe</button>
+							<script type="text/javascript">
+								function validateEmail() {
+									if (emailEntry.value != '') {
+										alert("Subscribed! Look out for future discount codes!");
+										return true;
+									}
+									else {
+										alert("There was a problem subscribing. Please ensure your email is not misspelled.");
+										return false;
+									}
+								}
+							</script>
+						</div>
 					</form>
 					<p><i>By submitting this registration form, you agree to receive emails from HELLFIRE. You will recieve emails regarding, but not limited to, promotional offers, exclusive offers, tracking orders, and order confirmations.</i></p>
 				</fieldset>
@@ -288,7 +303,7 @@
 				</tr>
 			</table>
 			<br><br><br>
-			<h3 style="color: red; margin: 20px; padding: 10px;"><b>Please Note: Our drinks are tailored for the average adolescent, up to professional athletes who require the boost. Please keep in mind that your health comes first, so please consume a maximum of one can daily. Do not consume our drinks if you are sensitive to caffeine, or if you are pregnant. Please consult your doctor before consuming our drinks, to ensure that you do not have any health concerns that may make consuming these drinks harmful to your health.</b></h3>
+			<h3 style="color: red; margin: 20px; padding: 10px; text-shadow: 1px 2px black;"><b>Please Note: Our drinks are tailored for the average adolescent, up to professional athletes who require the boost. Please keep in mind that your health comes first, so please consume a maximum of one can daily. Do not consume our drinks if you are sensitive to caffeine, or if you are pregnant. Please consult your doctor before consuming our drinks, to ensure that you do not have any health concerns that may make consuming these drinks harmful to your health.</b></h3>
 		</div>
 
 <!--Contact Us pg-->
