@@ -12,8 +12,6 @@ p{
         margin: 15px;
         line-height: 20px;
         color: rgb(255, 255, 255);
-        align-items: center;
-        align-self: left;
 }
 #main{
    background-color: tomato;

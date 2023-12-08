@@ -3,13 +3,28 @@ html{
 }
 h1{
     text-shadow: 2px 2px 3px rgb(232, 92, 181);
+    margin-bottom: 20px;
 }
-h2{
+h2, h3{
     text-align: center;
     text-shadow: 2px 2px 3px rgb(2, 36, 15)
-    
 }
+
 .img-container{
   margin-bottom: 0em;
   padding-bottom: 0em;
+}
+.contact{
+}
+.img1{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.img2{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.img3{
+    margin-right: 15px;
+    margin-left: 15px;
 }
