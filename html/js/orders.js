@@ -69,16 +69,16 @@ window.onload = function() {
     function changingtoBlack() {
       ordering.style.color = "black";
     }
-    $("document").ready(function() {
-      $("#submit").click(function() {
-        if ($("#phnum").val() == "" || !phonePattern.test($("#phnum").val())) {
-          $("#phnum").css("background-color", "red");
-          isValid = false;
-        }
-        if ($("#email").val() == "" || !mailPattern.test($("#email").val())) {
-          $("#email").css("background-color", "red");
-          isValid = false;
-        }}
+			$("document").ready(function() {
+				$("#submit").click(function() {
+    if ($("#phnum").val() == "" || !phonePattern.test($("#phnum").val())) {
+      $("#phnum").css("background-color", "red");
+      isValid = false;
+    }
+    if ($("#email").val() == "" || !mailPattern.test($("#email").val())) {
+      $("#email").css("background-color", "red");
+      isValid = false;
+    }
     ordering.addEventListener("mouseover", changingtoYellow);
     ordering.addEventListener("mouseout", changingtoBlack);
     visualImpaired.addEventListener("mouseover", accessibilityHighlightRed);

@@ -8,44 +8,6 @@
         <link rel="stylesheet" href="css/orders.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/orders.js"></script>
-        <script type="text/javascript" src="js/jquery.js"></script>
-		<script>
-			$("document").ready(function() {
-				$("#submit").click(function() {
-					$("input").css("background-color", "");
-					let isValid = true;
-					let phonePattern = /^\([0-9]{3}\)[0-9]{3}-[0-9]{4}$/;
-					let mailPattern = /\@.+\./
-					if ($("#fname").val() == "") {
-						$("#fname").css("background-color", "red");
-						isValid = false;
-					}
-					if ($("#lname").val() == "") {
-						$("#lname").css("background-color", "red");
-						isValid = false;
-					}
-					if ($("#address").val() == "") {
-						$("#address").css("background-color", "red");
-						isValid = false;
-					}
-					if ($("#phonenum").val() == "" || !phonePattern.test($("#phonenum").val())) {
-						$("#phonenum").css("background-color", "red");
-						isValid = false;
-					}
-					if ($("#email").val() == "" || !mailPattern.test($("#email").val())) {
-						$("#email").css("background-color", "red");
-						isValid = false;
-					}
-					if ($("#resume").val() == "") {
-						$("#resume").css("background-color", "red");
-						isValid = false;
-					}
-					if (isValid) {
-						$("input[type=button]").css("background-color", "lime");
-					}
-				});
-			});
-		</script>
 
         <title>Hellfire Energy Order Page</title>
     </head>
