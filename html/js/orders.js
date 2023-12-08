@@ -78,8 +78,6 @@ window.onload = function() {
     visualImpaired.addEventListener("mouseout", accessibiltyHighlightNorm);
   
 
-  orderConfirmed1();
-  orderConfirmed2();
   accessibility();
   validatePhoneNumber(phnum);
 }
