@@ -1,4 +1,6 @@
 window.onload = function() {
+  orderConfirmed1();
+  orderConfirmed2();
 
   var form = document.querySelector('form');
   form.addEventListener('submit', function(e) {
@@ -55,32 +57,23 @@ window.onload = function() {
 
     for (var i = 0; i < visualImpaired.length; i++) {
       visualImpaired[i].addEventListener("mouseover", function() {
-        this.style.backgroundColor = "red";
+        this.style.backgroundColor = "cyan";
       });
       visualImpaired[i].addEventListener("mouseout", function() {
         this.style.backgroundColor = "none";
       });
     }
 
-    function changingtoYellow() {
-      ordering.style.color = "yellow";
+    function changingtoVI() {
+      ordering.style.color = "green";
     }
   
-    function changingtoBlack() {
+    function changingtoNorm() {
       ordering.style.color = "black";
     }
-			$("document").ready(function() {
-				$("#submit").click(function() {
-    if ($("#phnum").val() == "" || !phonePattern.test($("#phnum").val())) {
-      $("#phnum").css("background-color", "red");
-      isValid = false;
-    }
-    if ($("#email").val() == "" || !mailPattern.test($("#email").val())) {
-      $("#email").css("background-color", "red");
-      isValid = false;
-    }
-    ordering.addEventListener("mouseover", changingtoYellow);
-    ordering.addEventListener("mouseout", changingtoBlack);
+
+    ordering.addEventListener("mouseover", changingtoVI);
+    ordering.addEventListener("mouseout", changingtoNorm);
     visualImpaired.addEventListener("mouseover", accessibilityHighlightRed);
     visualImpaired.addEventListener("mouseout", accessibiltyHighlightNorm);
   
