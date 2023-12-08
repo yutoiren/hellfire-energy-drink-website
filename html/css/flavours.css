@@ -1,4 +1,6 @@
-body {background-image: linear-gradient(cyan,lightgreen,lightblue,rgb(87, 87, 243));}
+body {
+    background-image: linear-gradient(cyan,lightgreen,lightblue,rgb(87, 87, 243));
+}
 
 #sponsorposter {
     margin: 30px;

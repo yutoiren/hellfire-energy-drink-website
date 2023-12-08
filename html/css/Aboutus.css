@@ -1,12 +1,28 @@
 html {
-    background-image: linear-gradient(to right, red , yellow);
+    background-image: linear-gradient(to right, tomato , rgb(150, 41, 2));
 }
 h2 {
-    text-shadow: 2px 2px 3px rgb(172, 100, 240);
+    text-shadow: 2px 2px 3px rgb(110, 122, 249);
+    color: white;
 }
 
-p {
+p{
         font-family: Arial, sans-serif;
         padding: 25px;
         margin: 15px;
+        line-height: 20px;
+        color: rgb(255, 255, 255);
+        align-items: center;
+        align-self: left;
 }
+#main{
+   background-color: tomato;
+   margin: 25px;
+   padding: 25px;
+   border-radius: 15px;
+   border-color: black;
+   border-style: black;
+   box-shadow: 2px 3px 10px;
+   background-image: url(aboutusbackground.png);
+   background-size: cover;
+   }
