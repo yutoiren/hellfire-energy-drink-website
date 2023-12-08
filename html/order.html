@@ -8,6 +8,44 @@
         <link rel="stylesheet" href="css/orders.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/orders.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+		<script>
+			$("document").ready(function() {
+				$("#submit").click(function() {
+					$("input").css("background-color", "");
+					let isValid = true;
+					let phonePattern = /^\([0-9]{3}\)[0-9]{3}-[0-9]{4}$/;
+					let mailPattern = /\@.+\./
+					if ($("#fname").val() == "") {
+						$("#fname").css("background-color", "red");
+						isValid = false;
+					}
+					if ($("#lname").val() == "") {
+						$("#lname").css("background-color", "red");
+						isValid = false;
+					}
+					if ($("#address").val() == "") {
+						$("#address").css("background-color", "red");
+						isValid = false;
+					}
+					if ($("#phonenum").val() == "" || !phonePattern.test($("#phonenum").val())) {
+						$("#phonenum").css("background-color", "red");
+						isValid = false;
+					}
+					if ($("#email").val() == "" || !mailPattern.test($("#email").val())) {
+						$("#email").css("background-color", "red");
+						isValid = false;
+					}
+					if ($("#resume").val() == "") {
+						$("#resume").css("background-color", "red");
+						isValid = false;
+					}
+					if (isValid) {
+						$("input[type=button]").css("background-color", "lime");
+					}
+				});
+			});
+		</script>
 
         <title>Hellfire Energy Order Page</title>
     </head>
@@ -35,7 +73,7 @@
             <section id="introform_adjust">
                 <p style="font-size: larger; font-family: cursive; margin-left: 10px;"><b>We now have 5 ways to get a can of Hellfire to you! Please select your choice of payment:</b></p>
 
-                <form style="margin-left: 30px;" onsubmit="return paymentValidate()"></form>
+                <form style="margin-left: 30px;" onsubmit="return paymentValidate()">
                     <p></p>
                     <input type="radio" id="paypal" name="payment" value="PayPal">
                     <label for="PayPal">PayPal</label><br>
@@ -47,8 +85,9 @@
                     <label for="Google Pay">Google Pay</label><br>
                     <input type="radio" id="apple_pay" name="payment" value="Apple Pay">
                     <label for="Apple Pay">Apple Pay</label><br><br>
-    
+                    <input type="submit" value="Confirm Method of Payment">
                 </form>
+                
             </section>
             
 
@@ -66,33 +105,33 @@
                 <tr>
                         <td align="center">
 
-                        <form  onclick="orderConfirmed()" id="ordering">
+                        <form id="ordering" onsubmit="return validatePhoneNumber(document.getElementById('phnum').value);">
 
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="cardnum">Card Number:</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="accessibility" for="cardnum">Card Number:</label>
                             &nbsp;&nbsp;<input type="text" id="cardnum" name="cardnum" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <br><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="cvv">CVV:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="accessibility1" for="cvv">CVV:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                             <input type="text" id="cvv" name="cvv" required>
                             <br><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="phnum">Phone Number: </label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="accessibility2" for="phnum">Phone Number: </label>
                             <input type="text" id="phnum" name="phnum" required>
                             <br><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="street">Street Address:&nbsp;</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="accessibility3" for="street">Street Address:&nbsp;</label>
                             <input type="text" id="street" name="street" required>
                             <br><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="province">Province: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="accessibility4" for="province">Province: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                             <input type="text" id="province" name="province" required>
                             <br><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="country">Country: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="accessibility5" for="country">Country: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                             <input type="text" id="country" name="country" required>
                             <br><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="postalc">Postal Code:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="accessibility6" for="postalc">Postal Code:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                             <input type="text" id="postalc" name="postalc" required>
                             <br><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="email">Email Address:&nbsp;</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="accessibility7" for="email">Email Address:&nbsp;</label>
                             <input type="text" id="email" name="email" required>
                             <br><br><br><br><br>
-                            <label for="quantity">Quantity:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <label id="accessibility8" for="quantity">Quantity:&nbsp;&nbsp;&nbsp;&nbsp;</label>
                             <select name ="quantity" required>
                                 <optgroup label ="Quantity">
                                     <option value ="1">1</option>
